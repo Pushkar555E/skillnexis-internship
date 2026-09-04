@@ -77,8 +77,8 @@ After preprocessing, the cleaned dataset was exported as:
 | ------------------------------ | ----------------------------------- |
 | `Titanic-Dataset.csv`          | Original Titanic dataset            |
 | `Titanic-Cleaned-Dataset.csv`  | Dataset after preprocessing         |
-| `week1_titanic_assignment.py`  | Python code used for the assignment |
-| `titanic_age_distribution.png` | Age distribution visualization      |
+| `assignment.ipynb`             | Notebook containing the assignment |
+| `download.png`                 | Age distribution visualization     |
 | `README.md`                    | Project documentation               |
 
 ## Technologies Used
@@ -96,13 +96,9 @@ Install the required Python libraries:
 pip install pandas matplotlib scikit-learn
 ```
 
-Then run:
+Then open `assignment.ipynb` in Jupyter Notebook or VS Code and run the cells.
 
-```bash
-python week1_titanic_assignment.py
-```
-
-Make sure `Titanic-Dataset.csv` is in the same directory as the Python file.
+Make sure `Titanic-Dataset.csv` is in the same directory as the notebook.
 
 ## Result
 
