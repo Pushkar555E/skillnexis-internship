@@ -1,0 +1,15 @@
+Bank Loan Approval Prediction - Results
+Dataset rows: 614
+Dataset columns: 13
+Training rows: 491
+Testing rows: 123
+Algorithm: Random Forest
+Random state: 42
+
+Accuracy: 0.8130
+Precision: 0.8370
+Recall: 0.9059
+
+Confusion Matrix:
+[[23 15]
+ [ 8 77]]

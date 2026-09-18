@@ -9,7 +9,7 @@ This repository contains my assignments and project work from the SkillNexis Mac
 | Week 1 | ML fundamentals and Titanic data preprocessing | Completed |
 | Week 2 | House price prediction with linear regression | Completed |
 | Week 3 | Iris clustering with K-Means and PCA | Completed |
-| Week 4 | Coming soon | Pending |
+| Week 4 | Bank loan approval classification | Completed |
 
 ## Repository Structure
 
@@ -36,6 +36,19 @@ skillnexis-internship/
 |   |-- 02_pca_2d.png
 |   |-- README.txt
 |   `-- VERIFICATION_RESULTS.txt
+|-- Week-4/
+|   |-- bank_loan_approval.py
+|   |-- bank_loan_approval.ipynb
+|   |-- loan_prediction_dataset.csv
+|   |-- loan_status_distribution.png
+|   |-- confusion_matrix.png
+|   |-- feature_importance.png
+|   |-- sample_predictions.csv
+|   |-- results.txt
+|   |-- requirements.txt
+|   |-- bank_loan_approval_report.docx
+|   |-- bank_loan_approval_presentation.pptx
+|   `-- README.md
 `-- README.md
 ```
 
@@ -100,3 +113,31 @@ python iris_clustering_project.py
 ```
 
 [View the Week 3 project](./Week-3/)
+
+## Week 4: Bank Loan Approval Prediction
+
+The Week 4 project predicts whether a bank loan should be approved using a Random Forest classification pipeline.
+
+The workflow includes:
+
+- Imputing missing numerical and categorical values
+- One-hot encoding categorical features
+- Excluding `Loan_ID` because it is an identifier
+- Training a balanced Random Forest classifier with 300 trees
+- Evaluating predictions with accuracy, precision, recall, and a confusion matrix
+- Saving sample predictions and model visualizations
+
+The supplied evaluation results are:
+
+- Accuracy: 0.8130
+- Precision: 0.8370
+- Recall: 0.9059
+
+Run the Python script from the `Week-4` directory:
+
+```bash
+pip install -r requirements.txt
+python bank_loan_approval.py
+```
+
+[View the Week 4 project](./Week-4/)
