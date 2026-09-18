@@ -8,7 +8,7 @@ This repository contains my assignments and project work from the SkillNexis Mac
 | --- | --- | --- |
 | Week 1 | ML fundamentals and Titanic data preprocessing | Completed |
 | Week 2 | House price prediction with linear regression | Completed |
-| Week 3 | Coming soon | Pending |
+| Week 3 | Iris clustering with K-Means and PCA | Completed |
 | Week 4 | Coming soon | Pending |
 
 ## Repository Structure
@@ -27,6 +27,15 @@ skillnexis-internship/
 |   |-- Housing.csv
 |   |-- house_price_predictions.csv
 |   `-- actual_vs_predicted.png
+|-- Week-3/
+|   |-- iris_clustering_project.py
+|   |-- iris_clustering_project.ipynb
+|   |-- Iris.csv
+|   |-- Iris_KMeans_Results.csv
+|   |-- 01_kmeans_clusters.png
+|   |-- 02_pca_2d.png
+|   |-- README.txt
+|   `-- VERIFICATION_RESULTS.txt
 `-- README.md
 ```
 
@@ -66,3 +75,28 @@ python complete_house_price_model.py
 ```
 
 [View the Week 2 project](./Week-2/)
+
+## Week 3: Iris Clustering
+
+The Week 3 project applies unsupervised learning and dimensionality reduction to the Iris dataset.
+
+The workflow includes:
+
+- Selecting the four Iris measurement features
+- Applying K-Means clustering with `k=3`
+- Visualizing clusters and cluster centers
+- Standardizing features before PCA
+- Reducing the data to two principal components
+- Comparing clusters with the true species labels using Adjusted Rand Index
+- Saving cluster assignments to `Iris_KMeans_Results.csv`
+
+The first two principal components explain approximately 95.80% of the dataset variance, and the verified Adjusted Rand Index is 0.7302.
+
+Run the Python script from the `Week-3` directory:
+
+```bash
+pip install pandas matplotlib scikit-learn
+python iris_clustering_project.py
+```
+
+[View the Week 3 project](./Week-3/)
